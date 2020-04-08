@@ -12,6 +12,7 @@ describe.only("robotPaths", () => {
 
   it("should return a number", () => {
     const path = new RobotPaths(3);
+    console.log("AAAAAAAAAAAAA", path);
     expect(path).not.to.be.undefined;
     expect(path.solve).to.be.a("function");
     const result = path.solve();
@@ -25,6 +26,7 @@ describe.only("robotPaths", () => {
 
   it("should correctly identify the number of unique paths for a 1x1 grid", () => {
     const result = new RobotPaths(1).solve();
+    //console.log("AAAAAAAAAAAAA", result);
     expect(result).to.equal(1);
   });
 
