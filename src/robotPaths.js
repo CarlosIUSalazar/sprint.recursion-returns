@@ -30,7 +30,7 @@ class RobotPaths {
   solve() {
     // Your code here.
     const dimensions = this.board.size;
-    console.log("AAAAAAAAA", dimensions);
+    //console.log("AAAAAAAAA", dimensions);
     let pathNumber = 0;
     const move = (row, col) => {
       this.board.togglePiece(row, col);

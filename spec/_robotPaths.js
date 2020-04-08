@@ -12,7 +12,7 @@ describe.only("robotPaths", () => {
 
   it("should return a number", () => {
     const path = new RobotPaths(3);
-    console.log("AAAAAAAAAAAAA", path);
+    //console.log("AAAAAAAAAAAAA", path);
     expect(path).not.to.be.undefined;
     expect(path.solve).to.be.a("function");
     const result = path.solve();
