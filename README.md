@@ -1,41 +1,40 @@
-# 再帰、ふたたび
-### This was created during my time as a [Code Chrysalis](https://codechrysalis.io) Student
+# Recursion Returns
 
-これはもう見慣れていますよね！　ここではふたたび再帰を扱います。見たことのあるものと新たな問題の両方に取り組んでいきましょう。
+This looks familiar! We will practice recursion again, with some familiar and some new problems.
 
-## 学習の目的
+## Objectives
 
-次のことを念頭に進めていきましょう。
+Continue doing the following:
 
-- Node と yarn を用いてテストを実行できるようにすること
-- 各関数につき最低 4 つのテストがあるのを確認すること
-- それぞれのマイルストーンの後には必ずコードをコミットする習慣をつけること
+* Be able to use Node and yarn to run tests
+* Ensure there are at least four tests for each function
+* Be able to commit code after each milestone
 
-この課題では、現実世界で再帰を用いるシナリオ（`getElementsByClassName`）、そしてより仮説的な / アルゴリズム上でのシナリオの 2 つを想定しています。
+This assignment focuses on using recursion in a real-life application scenario (`getElementsByClassName`) and in a more hypothetical/algorithmic scenario.
 
-- ベースケースとリカーシブケースを特定して、複雑で反復の多いタスクを解決すること
+* Identify base and recursive cases to solve complex repetitive tasks
 
-## 準備
+## Set Up
 
-Code Chrysalis git flow instructions を参考に、このリポジトリをフォークし、そしてクローンしてください。
+Fork and clone this repository following the Code Chrysalis git flow instructions.
 
-依存物のインストール： `yarn install`
+Install dependencies: `yarn install`
 
-テストを実行するコマンド： `yarn test`
+Command to run tests: `yarn test`
 
-## 基本演習
+## Basic Requirements
 
-1. `getElementsByClassName.js` のテストはかなり複雑なので、みなさんのためにすでに用意してあります。テストスペックをよく読み、個別のテストの意味するところをしっかり理解してください。ちゃんと自信を持って説明できますか？
-1. `src/getElementByClassName.js` を解き終える
-   1. JavaScript の Document オブジェクトは素晴らしいものです。これはたくさんの美しい出来事、たとえば、クラス名を入れるだけで、同じクラス名を持ったページ上のあらゆる要素を取得することができます。ですが、便利な道具に頼っていては練習になりません！　自分でオリジナルのメソッドを作ってみましょう。
-1. `src/robotPaths.js` を解き終える
-   1. N x N マスの格子の左上にいるロボットが、右下に移動しようとしています。ロボットは水平と垂直方向には動けますが、斜めには動けず、同じマスを 2 度通ることはできません。右下に到達する道筋は、何通り考えられるでしょうか？
+1. The tests for `getElementsByClassName.js` is quite complex so we have kept it for you. Please read through the test specs to get a sense of how those particular tests are created. Can you explain it out-loud?
+1. Complete `src/getElementByClassName.js`
+    1. The Document object in JavaScript is amazing. It does a lot of beautiful things for you, like getting all the elements on a page by their classname. But we don't like easy! So we'll make you write your own.
+1. Complete `src/robotPaths.js`
+    1. A robot located at the top left corner of an N x N grid is trying to reach the bottom right corner. The robot can move horizontally and vertically, but it cannot move diagonally and cannot visit the same square twice. How many possible unique paths are there to the bottom right corner?
 
-## 中級演習
+## Medium Requirements
 
-1. `src/stringifyJSON.js` のために少なくとも 4 つのテストを書け。
-1. `src/stringifyJSON.js` を解け。
+1. Write at least four tests for `src/stringifyJSON.js`
+1. Complete `src/stringifyJSON.js`
 
-## 上級演習
+## Advanced Requirements
 
-1. `src/parseJSON.js` を解け。ただし、`JSON.parse` を使ってはいけません。自分でメソッドを作ってください。
+1. Complete `src/parseJSON.js`: You cannot use `JSON.parse`---you'll need to write your own.
